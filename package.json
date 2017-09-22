@@ -1,0 +1,22 @@
+{
+  "name": "auto-daily-bonus",
+  "version": "1.0.0",
+  "description": "get daily bonus",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsthunder/auto-daily-bonus.git"
+  },
+  "author": "xsthunder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xsthunder/auto-daily-bonus/issues"
+  },
+  "homepage": "https://github.com/xsthunder/auto-daily-bonus#readme",
+  "dependencies": {
+    "request": "^2.82.0"
+  }
+}
