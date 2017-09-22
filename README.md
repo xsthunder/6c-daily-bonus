@@ -1,1 +1,9 @@
 # auto-daily-bonus
+get daily bonus using nodejs for 91vps project
+try to get daily bonus for every 12 hrs
+# usage 
+1. edit configure.js for your info
+2. npm install
+3. npm test
+# note
+use screen or other method to run the scripts in background
