@@ -14,7 +14,7 @@ var options = { method: 'POST',
 		code: user.code } };
 var checkin = function(cookie){
 	var options = { method: 'POST',
-		url: 'https://'+host+'/user/checkin',
+		url: 'https://'+user.host+'/user/checkin',
 		headers: 
 		{ 'postman-token': '579bddac-1fab-8d85-cce2-65de127232a5',
 			'cache-control': 'no-cache',
