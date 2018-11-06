@@ -2,5 +2,5 @@ exports={}
 exports.email='example@email.com'
 exports.passwd='example_passwd'
 exports.code=''
-exports.host='example.com'
+exports.host='6c.tn'
 module.exports=exports;
