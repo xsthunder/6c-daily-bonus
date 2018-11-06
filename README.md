@@ -1,5 +1,5 @@
 # auto-daily-bonus
-get daily bonus using nodejs for 91vps project
+get daily bonus using nodejs for [6c.tn](6c.tn) project
 try to get daily bonus for every 12 hrs
 # usage 
 1. edit configure.js for your info
