@@ -4,18 +4,18 @@ console.log(user);
 var request = require("request");
 var options = { method: 'POST',
 	url: 'https://'+user.host+'/auth/login',
-	headers: 
+	headers:
 	{ 'postman-token': 'c96107ac-bb07-0d07-7562-99f7fc0a5bd2',
 		'cache-control': 'no-cache',
 		'content-type': 'application/x-www-form-urlencoded' },
-	form: 
+	form:
 	{ email: user.email,
 		passwd: user.passwd,
 		code: user.code } };
 var checkin = function(cookie){
 	var options = { method: 'POST',
 		url: 'https://'+user.host+'/user/checkin',
-		headers: 
+		headers:
 		{ 'postman-token': '579bddac-1fab-8d85-cce2-65de127232a5',
 			'cache-control': 'no-cache',
 			cookie:cookie,
@@ -32,9 +32,9 @@ var main=()=>{request(options, function (error, response, body) {
 	let obj = JSON.parse(body);
 	let msg=unescape(obj.msg);
 	console.log(msg);
-	if(msg!='欢迎回来'){
-		console.error("login error ");
-		process.exit(1);
+	if(msg!='登录成功'){
+		console.error("login error ", msg);
+        return
 	}
 	let arr = (response.headers['set-cookie']);
 	let str = '';
