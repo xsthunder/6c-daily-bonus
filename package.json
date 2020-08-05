@@ -4,7 +4,8 @@
   "description": "get daily bonus",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "bash run.sh"
   },
   "repository": {
     "type": "git",

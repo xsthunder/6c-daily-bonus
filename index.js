@@ -1,6 +1,11 @@
 'use strict'
 const user = require("./configure.js");
 console.log(user);
+if(user.host==='example.com'){
+	console.error("please complete configure.js")
+	process.exit(1)
+}
+
 var request = require("request");
 var options = { method: 'POST',
 	url: 'https://'+user.host+'/auth/login',
@@ -46,4 +51,3 @@ var main=()=>{request(options, function (error, response, body) {
 });
 }
 main();
-setInterval(main,12*60*60*1000);
