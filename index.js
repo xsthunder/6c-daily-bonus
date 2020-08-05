@@ -6,6 +6,7 @@ if(user.host==='example.com'){
 	process.exit(1)
 }
 
+
 var request = require("request");
 var options = { method: 'POST',
 	url: 'https://'+user.host+'/auth/login',

@@ -9,6 +9,13 @@ try to get daily bonus for every 12 hrs
 2. request >= 2.82
 3. node > 10
 
+# Cron
+
+>[0 15 10 * * MON-FRI *](https://cloud.tencent.com/document/product/583/9708#.E7.A4.BA.E4.BE.8B)
+
+4. `0 0 1,9,17 * * * *` for 1,9,17 o'clock daily
+5. `0 37 20 * * * *` for every day 10£º15 for testing
+
 # usage 
 
 1. edit configure.js for your info
