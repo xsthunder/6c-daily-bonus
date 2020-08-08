@@ -1,6 +1,6 @@
-while True
+while true
 do
 	# won't terminate the loop even encoutering error
 	node index.js
-	sleep 12h
+	sleep 5h
 done
