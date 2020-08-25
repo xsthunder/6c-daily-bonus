@@ -71,6 +71,7 @@ var main=()=>{
 	})
 }
 
-main(); // comment this if in qcould
+main(); // comment this if in qcloud
 
+// for use in qcloud
 exports.main_handler=async ()=>{ return await main() }
