@@ -36,11 +36,11 @@ var checkin = function(cookie, resolve, reject){
 			'content-type': 'application/x-www-form-urlencoded' } };
 	request(options, function (error, response, body) {
 		rejectAndThrow(error, reject)
-		console.log("checkin body", body, "checkin body")
+		console.log("checkin body", body)
 		// console.log("checkin response", response)
-		// let obj = JSON.parse(body);
-		// obj.msg = unescape(obj.msg)
-		// console.log(obj.msg);
+		let obj = JSON.parse(body);
+		obj.msg = unescape(obj.msg)
+		console.log(obj.msg);
 		resolve(obj)
 	});
 }
@@ -71,6 +71,6 @@ var main=()=>{
 	})
 }
 
-main(); // comment this if in qcould 
+main(); // comment this if in qcould
 
 exports.main_handler=async ()=>{ return await main() }
